@@ -6,13 +6,12 @@ const userSchema = mongoose.Schema(
     lastName: { type: String, required: true },
     email: { type: String, unique: true, required: true },
     password: { type: String, require: true, minLength: 8 },
-    adharID:{type:String,required:true},
-    panID:{type:String,required:true},
-    kycID:{type:String,required:true},
-    passportID:{type:String,required:true},
-    passportID:{type:String,required:true},
-    mobileNO:{type:Number,required:true,minLength: 10}
-
+    adharID:{type:String,required:false},
+    panID:{type:String,required:false},
+    kycID:{type:String,required:false},
+    passportID:{type:String,required:false},
+    Date:{type:String,required:false},
+    mobileNO:{type:Number,required:false,minLength: 10}
   },
   {
     versionKey: false,

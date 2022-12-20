@@ -10,6 +10,7 @@ const userSchema = mongoose.Schema(
     panID:{type:String,required:true},
     kycID:{type:String,required:true},
     passportID:{type:String,required:true},
+    passportID:{type:String,required:true},
     mobileNO:{type:Number,required:true,minLength: 10}
 
   },
